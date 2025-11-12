@@ -1,0 +1,31 @@
+{
+  "feature_order": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol",
+    "wine_type"
+  ],
+  "buckets": {
+    "0": "Est\u00e1ndar (<=6)",
+    "1": "Premium (>=7)"
+  },
+  "model_file": "wine_quality_model.keras",
+  "scaler_file": "wine_scaler.pkl",
+  "test_accuracy": 0.7941729323308271,
+  "test_macro_f1": 0.7209626486849621,
+  "samples": {
+    "train": 3404,
+    "val": 852,
+    "test": 1064,
+    "total": 5320
+  },
+  "threshold": 0.45
+}
