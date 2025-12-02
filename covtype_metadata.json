@@ -1,0 +1,142 @@
+{
+  "dataset": "covtype",
+  "task": "multiclass",
+  "feature_order": [
+    "Elevation",
+    "Aspect",
+    "Slope",
+    "Horizontal_Distance_To_Hydrology",
+    "Vertical_Distance_To_Hydrology",
+    "Horizontal_Distance_To_Roadways",
+    "Hillshade_9am",
+    "Hillshade_Noon",
+    "Hillshade_3pm",
+    "Horizontal_Distance_To_Fire_Points",
+    "Wilderness_Area_0",
+    "Wilderness_Area_1",
+    "Wilderness_Area_2",
+    "Wilderness_Area_3",
+    "Soil_Type_0",
+    "Soil_Type_1",
+    "Soil_Type_2",
+    "Soil_Type_3",
+    "Soil_Type_4",
+    "Soil_Type_5",
+    "Soil_Type_6",
+    "Soil_Type_7",
+    "Soil_Type_8",
+    "Soil_Type_9",
+    "Soil_Type_10",
+    "Soil_Type_11",
+    "Soil_Type_12",
+    "Soil_Type_13",
+    "Soil_Type_14",
+    "Soil_Type_15",
+    "Soil_Type_16",
+    "Soil_Type_17",
+    "Soil_Type_18",
+    "Soil_Type_19",
+    "Soil_Type_20",
+    "Soil_Type_21",
+    "Soil_Type_22",
+    "Soil_Type_23",
+    "Soil_Type_24",
+    "Soil_Type_25",
+    "Soil_Type_26",
+    "Soil_Type_27",
+    "Soil_Type_28",
+    "Soil_Type_29",
+    "Soil_Type_30",
+    "Soil_Type_31",
+    "Soil_Type_32",
+    "Soil_Type_33",
+    "Soil_Type_34",
+    "Soil_Type_35",
+    "Soil_Type_36",
+    "Soil_Type_37",
+    "Soil_Type_38",
+    "Soil_Type_39"
+  ],
+  "class_names": [
+    "Spruce/Fir",
+    "Lodgepole Pine",
+    "Ponderosa Pine",
+    "Cottonwood/Willow",
+    "Aspen",
+    "Douglas-fir",
+    "Krummholz"
+  ],
+  "positive_label": null,
+  "artifacts": {
+    "model": "covtype_model.keras",
+    "scaler": "covtype_scaler.pkl",
+    "metadata": "covtype_metadata.json",
+    "history": "covtype_history.json"
+  },
+  "test_accuracy": 0.8853333333333333,
+  "test_macro_f1": 0.8331814593535639,
+  "samples": {
+    "train": 86700,
+    "val": 15300,
+    "test": 18000,
+    "total": 120000
+  },
+  "threshold": null,
+  "classification_report": {
+    "Spruce/Fir": {
+      "precision": 0.8898395721925134,
+      "recall": 0.8873990553100716,
+      "f1-score": 0.888617638083613,
+      "support": 6563.0
+    },
+    "Lodgepole Pine": {
+      "precision": 0.9176666270642747,
+      "recall": 0.8800273441950552,
+      "f1-score": 0.8984529487030359,
+      "support": 8777.0
+    },
+    "Ponderosa Pine": {
+      "precision": 0.8560541913632514,
+      "recall": 0.9124548736462094,
+      "f1-score": 0.8833551769331586,
+      "support": 1108.0
+    },
+    "Cottonwood/Willow": {
+      "precision": 0.825,
+      "recall": 0.7764705882352941,
+      "f1-score": 0.8,
+      "support": 85.0
+    },
+    "Aspen": {
+      "precision": 0.5841346153846154,
+      "recall": 0.826530612244898,
+      "f1-score": 0.6845070422535211,
+      "support": 294.0
+    },
+    "Douglas-fir": {
+      "precision": 0.710077519379845,
+      "recall": 0.8513011152416357,
+      "f1-score": 0.7743026204564666,
+      "support": 538.0
+    },
+    "Krummholz": {
+      "precision": 0.8519553072625698,
+      "recall": 0.9606299212598425,
+      "f1-score": 0.9030347890451518,
+      "support": 635.0
+    },
+    "accuracy": 0.8853333333333333,
+    "macro avg": {
+      "precision": 0.8049611189495813,
+      "recall": 0.8706876443047152,
+      "f1-score": 0.8331814593535639,
+      "support": 18000.0
+    },
+    "weighted avg": {
+      "precision": 0.8893199469185695,
+      "recall": 0.8853333333333333,
+      "f1-score": 0.8864290887123903,
+      "support": 18000.0
+    }
+  }
+}
